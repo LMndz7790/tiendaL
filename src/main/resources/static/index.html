@@ -1,58 +1,85 @@
 <!DOCTYPE html>
-
-<html>
+<!--Se actualiza la página index para que contenga las nuevas etiquetas meta y 
+démas etiquetas para la semántica del boddy-->
+<html lang="es">
     <head>
-        <title>Tienda en línea </title>
+        <title>Tienda en línea</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Esta página tiene etiquetas de tipo HTML5 y enlaces de definición de css">
+        <meta name="keywords" content="html5, css3, web, fidélitas">
     </head>
     <body>
+        <header>
+            <h1>TechShop</h1><!--etiqueta para hacerle al browser info de que es un encabezado-->
+        </header>
+        <nav><!--etiqueta para ilustrar al browser que es menú-->
         <a href="ejemplo9.html"> Back</a>|
         <a href="index.html"> Home</a>|
         <a href="ejemplo2.html"> Next</a><br>
+        </nav>
         
-        <div>
-            <h1> Home</h1>
-            <p>Bienvenidos a la página web en línea....</p> 
-        </div>
+        <aside><!--etiqueta para ilustrar una barra lateral, puede ser a la derecha o izquierda, pueden ser varias-->
+            <h2> Productos más vendidos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit senectus, elementum erat morbi torquent vestibulum gravida 
+                donec penatibus laoreet, pharetra nostra tempus est eget mauris tortor. Elementum lectus odio ad condimentum eleifend 
+                dui scelerisque nam integer, etiam placerat sapien blandit sociosqu conubia himenaeos augue taciti, molestie congue 
+                maecenas sollicitudin massa semper habitasse fusce. Euismod ut taciti placerat bibendum ligula fames faucibus id 
+                integer urna eleifend proin maecenas, duis purus metus dis ullamcorper aliquam non viverra tempus enim ac fusce. 
+                Mollis cubilia tellus orci torquent aliquam facilisi et ridiculus augue convallis, feugiat suspendisse justo 
+                bibendum vivamus ultricies magnis mus curae sollicitudin, interdum quam curabitur arcu venenatis turpis in tempus 
+                penatibus.</p> 
+        </aside>
         
-        <p style=" text-align: left">Lorem ipsum dolor sit amet consectetur adipiscing elit feugiat sem litora venenatis platea ultrices tincidunt, 
+        <section>
+            
+        <h2> Articulos principales</h2>
+        <article>
+            <header>Portatil XRT 5000</header>
+        <p >Lorem ipsum dolor sit amet consectetur adipiscing elit feugiat sem litora venenatis platea ultrices tincidunt, 
             pulvinar porta imperdiet per vitae ac fringilla vehicula commodo in ridiculus condimentum mollis. Cubilia arcu 
             himenaeos ultrices integer convallis tellus leo sem, malesuada vel parturient nulla sodales volutpat ultricies 
-            elementum, augue cursus tristique sagittis sapien nibh fermentum. Semper neque commodo leo inceptos non habitant 
-            vulputate ullamcorper libero congue erat, bibendum scelerisque dapibus nec montes taciti posuere integer fermentum massa, 
-            sociis class vivamus ut nisi est quis litora maecenas quisque. Justo mattis primis duis nec cursus convallis viverra 
-            cras praesent tempus quam, ullamcorper facilisis netus fames congue turpis ornare scelerisque tortor pulvinar, 
-            litora magna bibendum placerat himenaeos taciti dictum vulputate accumsan volutpat.</p> 
+            elementum, augue cursus tristique sagittis sapien nibh fermentum.</p> 
+        <footer>Agregar al carrito</footer>
+        <br/> 
+        </article>
         
-        <p style=" text-align: right">Metus nam condimentum litora per sociosqu magnis at facilisi non, hendrerit auctor odio justo vivamus neque scelerisque 
+        <article>
+            <header>Alinware ATM 9000</header>
+        <p>Metus nam condimentum litora per sociosqu magnis at facilisi non, hendrerit auctor odio justo vivamus neque scelerisque 
             arcu pulvinar, sagittis habitasse ut montes laoreet nostra venenatis cursus. Fringilla maecenas penatibus velit 
             laoreet dui sollicitudin gravida, facilisi tristique venenatis viverra himenaeos turpis arcu, a molestie volutpat 
-            imperdiet ornare ullamcorper. Penatibus ut phasellus eu ultrices sapien metus faucibus feugiat sagittis tincidunt 
-            luctus suscipit, parturient ante dis morbi fringilla sollicitudin semper nibh lacus orci placerat, porttitor urna 
-            posuere gravida fusce massa duis suspendisse taciti quam in.</p> 
+            imperdiet ornare ullamcorper. </p> 
+         <footer>Agregar al carrito</footer>
+         <br/> 
+        </article>
         
-        <p style=" text-align: center">Ultricies semper dis maecenas augue porttitor 
+        <article>
+            <header>Impresora 3D portable</header>
+        <p>Ultricies semper dis maecenas augue porttitor 
             tempor mus, eleifend torquent ut vestibulum vivamus ac etiam, est molestie accumsan suspendisse litora viverra. 
             Netus accumsan dui proin nisl non etiam aenean urna auctor, vel tincidunt mi eros mattis semper leo purus pellentesque, 
-            maecenas penatibus vestibulum eleifend litora sodales nibh porta. Aptent quam aenean iaculis dis nisl nulla magnis 
-            bibendum, vel ultrices ligula mauris volutpat maecenas mi. Eu scelerisque hendrerit torquent dui id sed at sodales 
-            auctor placerat blandit potenti fusce nostra, semper euismod tincidunt inceptos massa mattis aptent libero eros 
-            lacinia turpis mollis. Rhoncus enim curae diam facilisi placerat morbi, odio donec posuere imperdiet primis penatibus non,
-            at magnis natoque eget parturient.</p>
+            maecenas penatibus vestibulum eleifend litora sodales nibh porta. </p>
+         <footer>Agregar al carrito</footer>
+         <br/> 
+        </article>
+        
+        </section>
+        
         <br/>   
         <br/> 
-        <p>Última línea</p>
+        <footer>Derechos reservados &COPY; 2022</footer>
         
+        <!--<p style=" text-align: left">,<p style=" text-align: right">,  <p style=" text-align: center">-->
         
+        <!-- estos son tamaños de titulos solo el h1 debe ser usado una vez
+        <h1> Titulo 1</h1>
         <h2> Titulo 2</h2>
         <h3> Titulo 3</h3>
         <h4> Titulo 4</h4>
         <h5> Titulo 5</h5>
         <h6> Titulo 6</h6>        
-        
-<br/>   
-<br/>  
+        -->
 
 
     </body>
