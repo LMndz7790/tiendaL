@@ -15,9 +15,9 @@ public class Cliente {
 
     public Cliente(String nombre, String apellidos, String correo, String telefono) {
         this.nombre = nombre;
-        this.apellidos= apellidos;
-        this.correo= correo;
-        this.telefono= telefono;
+        this.apellidos = apellidos;
+        this.correo = correo;
+        this.telefono = telefono;
 
     }
 
