@@ -21,4 +21,7 @@ public class Cliente {
 
     }
 
+    public Cliente(String luis_Mendez, String luisfidecom, String string) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
