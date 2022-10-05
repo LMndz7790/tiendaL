@@ -8,18 +8,19 @@ démas etiquetas para la semántica del boddy-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Esta página tiene etiquetas de tipo HTML5 y enlaces de definición de css">
         <meta name="keywords" content="html5, css3, web, fidélitas">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <header>
-            <h1>TechShop</h1><!--etiqueta para hacerle al browser info de que es un encabezado-->
+        <header id="encabezado"><!--etiqueta para hacerle al browser info de que es un encabezado-->
+            <h1>TechShop</h1>
         </header>
-        <nav><!--etiqueta para ilustrar al browser que es menú-->
+        <nav id="menu"><!--etiqueta para ilustrar al browser que es menú-->
         <a href="ejemplo9.html"> Back</a>|
         <a href="index.html"> Home</a>|
         <a href="ejemplo2.html"> Next</a><br>
         </nav>
         
-        <aside><!--etiqueta para ilustrar una barra lateral, puede ser a la derecha o izquierda, pueden ser varias-->
+        <aside id="barralateral"><!--etiqueta para ilustrar una barra lateral, puede ser a la derecha o izquierda, pueden ser varias-->
             <h2> Productos más vendidos</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit senectus, elementum erat morbi torquent vestibulum gravida 
                 donec penatibus laoreet, pharetra nostra tempus est eget mauris tortor. Elementum lectus odio ad condimentum eleifend 
@@ -31,7 +32,7 @@ démas etiquetas para la semántica del boddy-->
                 penatibus.</p> 
         </aside>
         
-        <section>
+        <section id="contenido">
             
         <h2> Articulos principales</h2>
         <article>
@@ -42,7 +43,7 @@ démas etiquetas para la semántica del boddy-->
             elementum, augue cursus tristique sagittis sapien nibh fermentum.</p> 
         <footer>Agregar al carrito</footer>
         <figure>
-            <img src="imagenes/Portatil1.jpg" alt="Portatil XRT 5000" width=""/>
+            <img src="imagenes/Portatil2.jpg" alt="Portatil XRT 5000" width="280"/>
             <figcaption>Más vendidos</figcaption>
          </figure>
         <br/> 
@@ -56,30 +57,72 @@ démas etiquetas para la semántica del boddy-->
             imperdiet ornare ullamcorper. </p> 
          <footer>Agregar al carrito</footer>
          <figure>
-            <img src="imagenes/Portatil2.jpg" alt="Alinware ATM 9000" width=""/>
+            <img src="imagenes/Portatil1.jpg" alt="Alinware ATM 9000" width="280"/>
+            <figcaption>Alto rendimiento</figcaption>
          </figure>
          <br/> 
         </article>
         
         <article>
             <header>Impresora 3D portable</header>
-        <p>Ultricies semper dis maecenas augue porttitor 
-            tempor mus, eleifend torquent ut vestibulum vivamus ac etiam, est molestie accumsan suspendisse litora viverra. 
+        <p>Ultricies semper dis maecenas augue porttitor tempor mus, eleifend torquent ut vestibulum vivamus ac etiam, est molestie accumsan suspendisse litora viverra. 
             Netus accumsan dui proin nisl non etiam aenean urna auctor, vel tincidunt mi eros mattis semper leo purus pellentesque, 
             maecenas penatibus vestibulum eleifend litora sodales nibh porta. </p>
          <footer>Agregar al carrito</footer>
          <figure>
-            <img src="imagenes/Impresora3D.jpg" alt="Impresora 3D portable" width=""/>
+            <img src="imagenes/Impresora3D.jpg" alt="Impresora 3D portable" width="280"/>
             <figcaption>Más económico</figcaption>
          </figure>
          <br/> 
+        </article>
+        
+        <article>
+            <header>Resumen de líneas generales</header>
+        <p> tempor mus, eleifend torquent ut vestibulum vivamus ac etiam, . </p>
+        <table border="0">
+            <thead>
+                <tr id="encabezadotabla">
+                    <th>Código</th>
+                    <th>Detalle</th>
+                </tr>
+            </thead>
+            <tbody id="tablaresumen">
+                <tr>
+                    <td>1</td>
+                    <td>Ultricies semper dis maecenas augue porttitor</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>tempor mus, eleifend torquent ut vestibulum vivamus ac etiam</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Netus accumsan dui proin nisl non etiam aenean urna auctor</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>vel tincidunt mi eros mattis semper leo purus pellentesque</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>maecenas penatibus vestibulum eleifend litora sodales nibh porta</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>est molestie accumsan suspendisse litora viverra</td>
+                </tr>
+            </tbody>
+        
+        </table>
+
+        
         </article>
         
         </section>
         
         <br/>   
         <br/> 
-        <footer>Derechos reservados &COPY; 2022<<address>Tel. 8889-7744</address></footer>
+        <footer id="piedepagina">Derechos reservados &COPY; 2022<<address style="display: inline">Tel. 8889-7744</address></footer>
         
         <!--<p style=" text-align: left">,<p style=" text-align: right">,  <p style=" text-align: center">-->
         
