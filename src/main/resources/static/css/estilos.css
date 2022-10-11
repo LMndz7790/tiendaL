@@ -29,21 +29,21 @@
 
 #menu a:hover {
     position: absolute;
-    top: 4%;
+    top: 30%;
     left:0;
     height: 4%;
     width: 100%;
-    background-color: green;
+    background-color: blue ;
     color: white;
 }
 
 #barralateral {
     position: absolute;
-    top: 12%;
+    top: 26%;
     left:0;
     height: 82%;
     width: 20%;
-    background-color: #00FFA0;
+    background-color:#FFFFFF ;
     padding: 10px;
 }
 
