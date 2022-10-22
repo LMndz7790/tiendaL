@@ -42,4 +42,17 @@ public class IndexController {
         return "redirect:/";
     }
 
+    @GetMapping("/modificarCliente/{idCliente}")
+     public String modificarCliente(Cliente cliente, Model model){
+     cliente = ClienteService.getClientes(cliente);
+     model.addAttribute("cliente", cliente);
+     return "modificarCliente";
+     
+     }
+    
+     @GetMapping("/eliminarCliente/{idCliente}")
+     public String eliminarCliente(Cliente cliente){
+     ClienteService.delete(cliente);
+     return "redirect:/";
+     }
 }
