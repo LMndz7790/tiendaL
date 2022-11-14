@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import lombok.Data;
 
@@ -17,15 +19,18 @@ public class Cliente implements Serializable{
 
     private static final long serialVersionUID = 1L;
     
-    private Long idCliente;//hibernate lo pasa a id_cliente
-    
     @Id
-    @GeneratedValue(strategy =GenerationType.IDENTITY)        
+    @GeneratedValue(strategy =GenerationType.IDENTITY)  
+    private Long idCliente;//hibernate lo pasa a id_cliente      
     Long idcliente;
     String nombre;
     String apellidos;
     String correo;
     String telefono;
+    
+    @JoinColumn(name="id_credito", referencedColumnName="id_credito")
+    @ManyToOne
+    private Credito credito;
 
     public Cliente() {
     }
@@ -41,4 +46,15 @@ public class Cliente implements Serializable{
     public Cliente(String luis_Mendez, String luisfidecom, String string) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
+    public Cliente(Long idcliente, String nombre, String apellidos, String correo, String telefono, Credito credito) {
+        this.idcliente = idcliente;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.correo = correo;
+        this.telefono = telefono;
+        this.credito = credito;
+    }
+    
+    
 }

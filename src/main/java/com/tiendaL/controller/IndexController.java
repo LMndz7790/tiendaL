@@ -1,7 +1,7 @@
 package com.tiendaL.controller;
 
-import com.tiendaL.domain.Cliente;
-import com.tiendaL.service.ClienteService;
+import com.tiendaL.domain.Articulo;
+import com.tiendaL.service.ArticuloService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,45 +14,39 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class IndexController {
 
     @Autowired
-    private ClienteService ClienteService;
+    private ArticuloService ArticuloService;
 
     @GetMapping("/")
     public String inicio(Model model) {
-
         log.info("Ahora se usa arquitectura MVC");
-
-        Cliente cliente = new Cliente("Luis Mendez", "luis@fide.com", "8888-0000");
-        //Cliente cliente2 = new Cliente ("Luis Blanco", "luis@fide.com", "8888-0000");
-
-        //var clientes= Arrays.asList(cliente);
-        var clientes = ClienteService.getClientes();
-
-        model.addAttribute("clientes", clientes);
+        var articulos = ArticuloService.getArticulo(true);
+        model.addAttribute("articulos", articulos);
         return "index";
     }
-
-    @GetMapping("/nuevoCliente")
-    public String nuevoCliente(Cliente cliente) {
-        return "modificarCliente";
+/*
+    @GetMapping("/nuevoArticulo")
+    public String nuevoArticulo(Articulo articulo) {
+        return "modificarArticulo";
     }
 
-    @PostMapping("/guardarCliente")
-    public String guardarCliente(Cliente cliente) {
-        ClienteService.save(cliente);
+    @PostMapping("/guardarArticulo")
+    public String guardarArticulo(Articulo articulo) {
+        ArticuloService.save(articulo);
         return "redirect:/";
     }
 
-    @GetMapping("/modificarCliente/{idCliente}")
-     public String modificarCliente(Cliente cliente, Model model){
-     cliente = ClienteService.getClientes(cliente);
-     model.addAttribute("cliente", cliente);
-     return "modificarCliente";
+    @GetMapping("/modificarArticulo/{idArticulo}")
+     public String modificarArticulo(Articulo articulo, Model model){
+     articulo = ArticuloService.getArticulos(articulo);
+     model.addAttribute("articulo", articulo);
+     return "modificarArticulo";
      
      }
     
-     @GetMapping("/eliminarCliente/{idCliente}")
-     public String eliminarCliente(Cliente cliente){
-     ClienteService.delete(cliente);
+     @GetMapping("/eliminarArticulo/{idArticulo}")
+     public String eliminarArticulo(Articulo articulo){
+     ArticuloService.delete(articulo);
      return "redirect:/";
      }
+*/
 }

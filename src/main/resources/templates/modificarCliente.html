@@ -12,7 +12,7 @@
        <header th:replace="layout/plantilla :: header"/>
        <h2>Datos de Cliente</h2>
        <a th:href="@{/}">Regresar</a>
-       <br/><!-- comment -->
+       <br/>
        <form th:action="@{/guardarCliente}"
              method="post"
              th:object="${cliente}">
