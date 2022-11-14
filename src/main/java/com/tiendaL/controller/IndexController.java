@@ -19,7 +19,9 @@ public class IndexController {
     @GetMapping("/")
     public String inicio(Model model) {
         log.info("Ahora se usa arquitectura MVC");
-        var articulos = ArticuloService.getArticulo(true);
+        //var articulos = ArticuloService.getArticulo(true);
+        //var articulos = ArticuloService.getPorExistencias(5);
+        var articulos = ArticuloService.getPorExistenciasCategorias(5, new Long(1));
         model.addAttribute("articulos", articulos);
         return "index";
     }
